@@ -15,39 +15,39 @@
 	}
 	#textarea{
 
-			height: 60px;
-			width: 345px;
-			text-align: right;
-		
-			font-weight: bold;
-			font-size: 20px;
-			margin-left: 6%;
+		height: 60px;
+		width: 345px;
+		text-align: right;
+
+		font-weight: bold;
+		font-size: 20px;
+		margin-left: 6%;
 
 
 
 		}
-		#cal{
+	#cal{
 
-		}
-		.btns{
-			font-size: 20px;
-			margin-left: 5%;
-			margin-top: 6%;
-			height:50px; 
-			width: 72px;
-			border: thick;
-			font-weight: bold;
-		}
-		.btns#btn0{
-			width: 166px;
+	}
+	.btns{
+		font-size: 20px;
+		margin-left: 5%;
+		margin-top: 6%;
+		height:50px; 
+		width: 72px;
+		border: thick;
+		font-weight: bold;
+	}
+	.btns#btn0{
+		width: 166px;
 
-		}
-		
-		#header{
-			text-align: center;
-			color: MediumSeaGreen;
-			padding-top: 3%;
-		}
+	}
+
+	#header{
+		text-align: center;
+		color: MediumSeaGreen;
+		padding-top: 3%;
+	}
 	</style>
 </head>
 <body>
@@ -64,7 +64,7 @@
 	
 	<form id="cal" name="forms">
 		<input type="text" name="textarea"  id="textarea" placeholder="0" >
-		
+
 		<button class="btns" type="button" id="btnce" value="ce"onclick="forms.textarea.value=''">CE</button>
 		<button class="btns" type="button" id="btnc" value="c"  onclick="forms.textarea.value=''">C</button>
 		<button class="btns" type="button" id="btn%" value="%" onclick="forms.textarea.value+='%'">%</button>
@@ -80,15 +80,11 @@
 		<button class="btns" type="button" id="btn1" value="1" onclick="forms.textarea.value+='1'">1</button>
 		<button class="btns" type="button" id="btn2" value="2" onclick="forms.textarea.value+='2'">2</button>
 		<button class="btns" type="button" id="btn3" value="3" onclick="forms.textarea.value+='3'">3</button>
-        <button class="btns" type="button" id="btn/" value="/" onclick="forms.textarea.value+='/'">/</button>
+		<button class="btns" type="button" id="btn/" value="/" onclick="forms.textarea.value+='/'">/</button>
 		<button class="btns" type="button" id="btn0" value="0" onclick="forms.textarea.value+='0'">0</button>
 		<button class="btns" type="button" id="btn." value="." onclick="forms.textarea.value+='.'">.</button>
 		<button class="btns" type="button" id="btn=" value="=" onclick="forms.textarea.value=eval(forms.textarea.value)">=</button>
-		
-		
-		
-
-		 
+ 
 	</form>
 	</div>
 
