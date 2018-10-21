@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>calculator</title>
+	<style type="text/css">
+
+
+	.body{
+		height:530px;
+		width: 380px;
+		background-color:lightgray;
+		margin-top: 5%;
+		margin-left: 25%;
+	
+	}
+	#textarea{
+
+			height: 60px;
+			width: 345px;
+			text-align: right;
+		
+			font-weight: bold;
+			font-size: 20px;
+			margin-left: 6%;
+
+
+
+		}
+		#cal{
+
+		}
+		.btns{
+			font-size: 20px;
+			margin-left: 5%;
+			margin-top: 6%;
+			height:50px; 
+			width: 72px;
+			border: thick;
+			font-weight: bold;
+		}
+		.btns#btn0{
+			width: 166px;
+
+		}
+		
+		#header{
+			text-align: center;
+			color: MediumSeaGreen;
+			padding-top: 3%;
+		}
+	</style>
+</head>
+<body>
+	<script type="text/javascript">
+		function calculator() {
+
+			
+		}
+	</script>
+	<div class ="body" name="body">
+	<h1 id="header" >Calculator </h1>
+
+		
+	
+	<form id="cal" name="forms">
+		<input type="text" name="textarea"  id="textarea" placeholder="0" >
+		
+		<button class="btns" type="button" id="btnce" value="ce"onclick="forms.textarea.value=''">CE</button>
+		<button class="btns" type="button" id="btnc" value="c"  onclick="forms.textarea.value=''">C</button>
+		<button class="btns" type="button" id="btn%" value="%" onclick="forms.textarea.value+='%'">%</button>
+		<button class="btns" type="button" id="btn+" value="+" onclick="forms.textarea.value+='+'">+</button>	
+		<button class="btns" type="button" id="btn7" value="7" onclick="forms.textarea.value+='7'">7</button>
+		<button class="btns" type="button" id="btn8" value="8" onclick="forms.textarea.value+='8'">8</button>	
+		<button class="btns" type="button" id="btn9" value="9" onclick="forms.textarea.value+='9'">9</button>
+		<button class="btns" type="button" id="btn-" value="-" onclick="forms.textarea.value+='-'">-</button>
+		<button class="btns" type="button" id="btn4" value="4" onclick="forms.textarea.value+='4'">4</button>
+		<button class="btns" type="button" id="btn5" value="5" onclick="forms.textarea.value+='5'">5</button>
+		<button class="btns" type="button" id="btn6" value="6" onclick="forms.textarea.value+='6'">6</button>
+		<button class="btns" type="button" id="btn*" value="*" onclick="forms.textarea.value+='*'">*</button>
+		<button class="btns" type="button" id="btn1" value="1" onclick="forms.textarea.value+='1'">1</button>
+		<button class="btns" type="button" id="btn2" value="2" onclick="forms.textarea.value+='2'">2</button>
+		<button class="btns" type="button" id="btn3" value="3" onclick="forms.textarea.value+='3'">3</button>
+        <button class="btns" type="button" id="btn/" value="/" onclick="forms.textarea.value+='/'">/</button>
+		<button class="btns" type="button" id="btn0" value="0" onclick="forms.textarea.value+='0'">0</button>
+		<button class="btns" type="button" id="btn." value="." onclick="forms.textarea.value+='.'">.</button>
+		<button class="btns" type="button" id="btn=" value="=" onclick="forms.textarea.value=eval(forms.textarea.value)">=</button>
+		
+		
+		
+
+		 
+	</form>
+	</div>
+
+</body>
+</html>
